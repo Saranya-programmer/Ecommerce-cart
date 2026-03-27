@@ -1,0 +1,97 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  margin: 0;
+}
+
+.main-title {
+  text-align: center;
+  color: white;
+  margin: 20px 0;
+}
+
+/* Layout */
+.container {
+  padding: 20px;
+}
+
+.main {
+  display: flex;
+  gap: 20px;
+}
+
+/* Products grid */
+.products {
+  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Cards */
+.products, .cart, .wishlist {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Product */
+.product {
+  text-align: center;
+  border-bottom: 1px solid #eee;
+  padding: 10px;
+}
+
+.product img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Buttons */
+button {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  color: white;
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+.addToCart { background: #667eea; }
+.addToWishlist { background: crimson; }
+
+.btn-plus { background: green; }
+.btn-minus { background: orange; }
+.btn-remove { background: red; }
+.btn-move { background: teal; }
+
+#clearCart { background: black; }
+
+/* Cart items */
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.controls {
+  display: flex;
+  gap: 5px;
+}
+
+.qty {
+  font-weight: bold;
+}
