@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My E-Commerce Store</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <h1 class="main-title">My E-Commerce Store 🛒</h1>
+
+  <div class="main">
+
+    <!-- PRODUCTS -->
+    <div class="products">
+
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b">
+        <h3>Shirt</h3>
+        <p>₹500</p>
+        <button class="addToCart" data-name="Shirt" data-price="500">Add to Cart</button>
+        <button class="addToWishlist" data-name="Shirt" data-price="500">❤️ Wishlist</button>
+      </div>
+
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff">
+        <h3>Shoes</h3>
+        <p>₹1200</p>
+        <button class="addToCart" data-name="Shoes" data-price="1200">Add to Cart</button>
+        <button class="addToWishlist" data-name="Shoes" data-price="1200">❤️ Wishlist</button>
+      </div>
+
+    </div>
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+
+      <!-- CART -->
+      <div class="cart">
+        <h2>Cart</h2>
+        <ul id="cartItems"></ul>
+        <h3>Total: ₹<span id="totalPrice">0</span></h3>
+        <button id="clearCart">Clear Cart</button>
+      </div>
+
+      <!-- WISHLIST -->
+      <div class="wishlist">
+        <h2>Wishlist</h2>
+        <ul id="wishlistItems"></ul>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
